@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#123c32" />
+  <link rel="icon" href="data:," />
+  <title>Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
+
+    :root {
+      --ink: #16201c;
+      --muted: #53615b;
+      --line: #d8dfdb;
+      --paper: #ffffff;
+      --soft: #f3f7f5;
+      --green: #123c32;
+      --mint: #bfe3d2;
+      --accent: #21765f;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { color: var(--green); }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--mint);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .hero {
+      background: var(--green);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 390px;
+      height: 390px;
+      right: -125px;
+      top: -200px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 48px rgba(255,255,255,.025), 0 0 0 96px rgba(255,255,255,.025);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 76px 32px 70px;
+      position: relative;
+      z-index: 1;
+    }
+    .effective {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 22px;
+      color: #d7e8e1;
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+    .effective::before {
+      content: "";
+      width: 26px;
+      height: 1px;
+      background: var(--mint);
+    }
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(2.7rem, 7vw, 5.4rem);
+      font-weight: 500;
+      line-height: .98;
+      letter-spacing: -.035em;
+    }
+    .hero-copy {
+      max-width: 650px;
+      margin: 26px 0 0;
+      color: #d7e8e1;
+      font-size: clamp(1.04rem, 2vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 720px);
+      gap: 74px;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 58px 32px 92px;
+    }
+    .rail { min-width: 0; }
+    .rail-inner {
+      position: sticky;
+      top: 28px;
+    }
+    .rail-title {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .rail nav { display: flex; flex-direction: column; }
+    .rail a {
+      padding: 8px 0;
+      color: var(--muted);
+      font-size: .91rem;
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .rail a:hover { color: var(--ink); }
+    .rail-note {
+      margin: 28px 0 0;
+      padding: 16px 0 0;
+      border-top: 3px solid var(--green);
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.5;
+    }
+
+    .intro {
+      margin: 0 0 42px;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(1.45rem, 3vw, 1.9rem);
+      line-height: 1.35;
+      color: #27332e;
+    }
+    section {
+      scroll-margin-top: 24px;
+      padding: 0 0 40px;
+      margin: 0 0 40px;
+      border-bottom: 1px solid var(--line);
+    }
+    section:last-of-type {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(1.65rem, 3vw, 2.1rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -.018em;
+    }
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      position: relative;
+      padding: 0 0 14px 22px;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: .69em;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .term { font-weight: 600; color: var(--ink); }
+    .callout {
+      margin: 4px 0 22px;
+      padding: 22px 24px;
+      background: var(--soft);
+      border-top: 3px solid var(--accent);
+    }
+    .callout p { color: #34423c; }
+    .policy-date {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 28px;
+      margin-top: 34px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero-inner { padding: 52px 22px 50px; }
+      .hero::after { width: 270px; height: 270px; right: -130px; top: -120px; }
+      .layout { display: block; padding: 30px 22px 64px; }
+      .rail { display: none; }
+      .intro { margin-bottom: 34px; }
+      section { padding-bottom: 32px; margin-bottom: 32px; }
+      .callout { padding: 18px; }
+      .policy-date { flex-direction: column; gap: 4px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      .hero { background: #fff; color: #000; border-bottom: 2px solid #000; }
+      .hero-inner { padding: 24px 0; }
+      .hero::after, .rail, .mobile-contents { display: none; }
+      .hero-copy, .effective { color: #333; }
+      .layout { display: block; max-width: none; padding: 28px 0; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="effective">Effective September 11, 2026</p>
+      <h1>Your health data stays focused on your requests.</h1>
+      <p class="hero-copy">This policy explains what information is handled when you connect your WHOOP account, why it is used, and the choices you have.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="rail" aria-label="Policy contents">
+      <div class="rail-inner">
+        <p class="rail-title">On this page</p>
+        <nav>
+          <a href="#scope">Scope</a>
+          <a href="#information">Information accessed</a>
+          <a href="#use">How information is used</a>
+          <a href="#sharing">Sharing</a>
+          <a href="#retention">Storage and retention</a>
+          <a href="#choices">Your choices</a>
+          <a href="#security">Security</a>
+          <a href="#children">Children</a>
+          <a href="#changes">Changes and contact</a>
+        </nav>
+        <p class="rail-note">The connection uses WHOOP’s OAuth authorization flow. Your WHOOP password is not collected.</p>
+      </div>
+    </aside>
+
+    <article>
+      <p class="intro">The WHOOP connection is designed to use only the health and account information needed to deliver the features you request. It does not sell your WHOOP data or use it for advertising.</p>
+
+      <section id="scope">
+        <h2>1. Scope</h2>
+        <p>This policy applies to information handled through the app’s connection to WHOOP. It covers data received from WHOOP after you authorize access and information generated from that data, such as summaries or trend analyses.</p>
+        <p>WHOOP’s own products, services, and data practices are governed by WHOOP’s privacy terms. This policy does not replace them.</p>
+      </section>
+
+      <section id="information">
+        <h2>2. Information accessed</h2>
+        <p>The specific information available depends on the permissions you approve in WHOOP’s authorization screen. It may include:</p>
+        <ul>
+          <li><span class="term">Account and profile information,</span> such as your WHOOP user identifier and basic profile details.</li>
+          <li><span class="term">Body measurements,</span> such as height, weight, and maximum heart rate when available.</li>
+          <li><span class="term">Cycle and strain information,</span> including physiological cycle records and daily strain.</li>
+          <li><span class="term">Recovery information,</span> including recovery score, resting heart rate, heart-rate variability, and related measurements.</li>
+          <li><span class="term">Sleep information,</span> including sleep duration, stages, performance, and sleep need.</li>
+          <li><span class="term">Workout information,</span> including activity type, duration, strain, heart-rate measurements, and related workout metrics.</li>
+          <li><span class="term">Authorization information,</span> including access and refresh tokens used to maintain the connection. The app does not receive your WHOOP password.</li>
+        </ul>
+      </section>
+
+      <section id="use">
+        <h2>3. How information is used</h2>
+        <p>WHOOP information is used to:</p>
+        <ul>
+          <li>Provide the health summaries, comparisons, readiness checks, and other analyses you request.</li>
+          <li>Display your authorized WHOOP metrics in connected health features.</li>
+          <li>Maintain and troubleshoot the connection, protect against misuse, and keep the service reliable.</li>
+          <li>Comply with applicable law and enforce service terms when required.</li>
+        </ul>
+        <div class="callout">
+          <p><strong>Not medical advice.</strong> Outputs based on WHOOP data are for general informational and wellness purposes. They are not a diagnosis, treatment plan, or substitute for care from a qualified health professional.</p>
+        </div>
+        <p>WHOOP information is not sold, rented, used for targeted advertising, or disclosed to data brokers.</p>
+      </section>
+
+      <section id="sharing">
+        <h2>4. When information is shared</h2>
+        <p>Information may be shared only in the following limited circumstances:</p>
+        <ul>
+          <li><span class="term">Service providers.</span> Vendors that support hosting, security, and service operation may process information only to perform those functions and subject to appropriate safeguards.</li>
+          <li><span class="term">Legal and safety reasons.</span> Information may be disclosed when reasonably necessary to comply with law, respond to valid legal process, prevent fraud or abuse, or protect rights and safety.</li>
+          <li><span class="term">With your direction.</span> Information may be shared when you explicitly ask for or authorize a particular use or disclosure.</li>
+        </ul>
+      </section>
+
+      <section id="retention">
+        <h2>5. Storage and retention</h2>
+        <p>Authorization tokens are stored using access controls intended to protect them from unauthorized use. WHOOP information is retained only for as long as needed to provide requested features, maintain the connection, resolve security or operational issues, or meet applicable legal obligations.</p>
+        <p>When access is revoked or a valid deletion request is completed, associated authorization credentials and app-held WHOOP information are deleted or de-identified, unless retention is required by law.</p>
+      </section>
+
+      <section id="choices">
+        <h2>6. Your choices</h2>
+        <h3>Control permissions</h3>
+        <p>You choose whether to connect WHOOP and which requested permissions to approve. If a required permission is declined, the related feature may not work.</p>
+        <h3>Disconnect access</h3>
+        <p>You may revoke the app’s access through your WHOOP account settings. Revocation stops future API access but does not, by itself, delete information previously received.</p>
+        <h3>Access, correction, and deletion</h3>
+        <p>You may request access to, correction of, or deletion of app-held WHOOP information through the app’s support channel. Requests may require reasonable verification to protect your account and health information.</p>
+      </section>
+
+      <section id="security">
+        <h2>7. Security</h2>
+        <p>Reasonable administrative, technical, and organizational safeguards are used to protect information against unauthorized access, alteration, loss, or disclosure. No method of storage or transmission is completely secure, so absolute security cannot be guaranteed.</p>
+      </section>
+
+      <section id="children">
+        <h2>8. Children</h2>
+        <p>The WHOOP connection is not directed to children under 13, and information from children under 13 is not knowingly collected through it. If such information is discovered, it will be deleted.</p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Changes and contact</h2>
+        <p>This policy may be updated to reflect changes in the connection, data practices, or legal requirements. The effective date at the top of the page will be revised when the policy changes.</p>
+        <p>For privacy questions or requests, use the support contact provided in the app or in the channel where you received access to it.</p>
+        <div class="policy-date" aria-label="Policy version">
+          <span>Policy version 1.0</span>
+          <span>Last updated September 11, 2026</span>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
